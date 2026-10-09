@@ -1,0 +1,88 @@
+/* Physical-phone refinements: safe areas and compact 320–430px layouts. */
+.shell,
+.page{min-height:100dvh}
+
+.page{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+
+.tabs{
+  height:calc(74px + env(safe-area-inset-bottom));
+  padding:8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+
+.toast,
+.list-toast{bottom:calc(94px + env(safe-area-inset-bottom))}
+
+.cover-back{top:calc(14px + env(safe-area-inset-top))}
+
+@media (max-width:400px){
+  .home-plus .hero{padding-left:12px;padding-right:12px}
+  .search-row{gap:8px}
+  .city{font-size:14px}
+  .city b{font-size:18px}
+  .search{padding:8px 10px;font-size:14px}
+  .home-plus .banner{height:224px;margin-top:14px;padding:23px 19px}
+  .banner h1{font-size:25px}
+  .banner-tags{gap:4px;margin-top:12px}
+  .banner-tags span{padding:3px 6px;font-size:10px}
+  .home-cats{margin:0 6px;padding:15px 3px}
+  .category-img{width:54px;height:54px}
+  .cat{font-size:13px!important}
+  .home-block{margin:10px 6px;padding:9px}
+  .promo{margin:10px 6px;padding:11px 14px}
+  .promo b{font-size:17px}
+
+  .list{padding:12px 10px calc(96px + env(safe-area-inset-bottom))}
+  .list-banner{min-height:82px;padding:14px}
+  .list-banner b{font-size:18px}
+  .list-card{gap:10px;min-height:132px;padding:10px!important}
+  .list-card img{width:92px!important;height:92px!important}
+  .list-card h3{font-size:16px!important}
+  .list-card p{font-size:12px;line-height:1.35}
+  .list-card .tag{font-size:10px}
+  .list-card .score{max-width:calc(100% - 76px);font-size:12px}
+  .list-actions{right:8px!important;bottom:10px!important;gap:4px}
+  .list-actions button{min-width:31px;padding:5px 7px!important}
+  .list-actions button span{display:none}
+  .list-actions button:first-child{font-size:15px}
+
+  .manage-head{min-height:252px;padding:18px 18px 64px}
+  .manage-store{gap:13px}
+  .manage-store img{width:88px;height:88px}
+  .manage-store h2{font-size:23px}
+  .manage-store p{font-size:16px}
+  .manage-metrics{margin:-43px 11px 14px;padding:16px 3px}
+  .manage-metrics b{font-size:23px}
+  .manage-metrics span{font-size:12px}
+  .manage-menu{margin:0 11px}
+  .manage-menu button{width:calc(100% - 24px);min-height:69px}
+  .manage-menu b{font-size:18px}
+
+  .mine-title{padding-top:32px;font-size:23px}
+  .mine-profile{min-height:154px;margin:0 8px;padding:22px 18px}
+  .mine-avatar{width:70px;height:70px}
+  .mine-profile h2{font-size:20px}
+  .mine-profile p{font-size:15px}
+  .mine-menu button{min-height:61px}
+  .mine-menu b{font-size:18px}
+
+  .detail-cover{height:245px}
+  .detail-card{padding:21px 15px 28px}
+  .detail-card h1{font-size:25px}
+  .detail-photos img{height:73px}
+
+  .form{padding-left:14px;padding-right:14px}
+  .form .field{grid-template-columns:90px minmax(0,1fr);gap:7px}
+  .form .field>label:first-child{font-size:14px}
+}
+
+@media (max-width:340px){
+  .tabs{font-size:12px}
+  .tab i{width:27px;height:27px}
+  .home-plus .banner{height:208px}
+  .banner h1{font-size:22px}
+  .category-img{width:49px;height:49px}
+  .list-card img{width:82px!important;height:82px!important}
+  .list-card{gap:8px;min-height:122px}
+  .list-card p{font-size:11px}
+  .list-card .score{font-size:11px}
+}
