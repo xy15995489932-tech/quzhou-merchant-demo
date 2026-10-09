@@ -1,0 +1,5 @@
+<view class="tabbar safe-bottom">
+  <view class="tab {{active === 'home' ? 'on' : ''}}" data-key="home" bindtap="onTabTap"><text class="tab-icon">⌂</text><text>首页</text></view>
+  <view class="tab {{active === 'apply' ? 'on' : ''}}" data-key="apply" bindtap="onTabTap"><text class="tab-icon">▣</text><text>商户入驻</text></view>
+  <view class="tab {{active === 'mine' ? 'on' : ''}}" data-key="mine" bindtap="onTabTap"><text class="tab-icon">♙</text><text>我的</text></view>
+</view>

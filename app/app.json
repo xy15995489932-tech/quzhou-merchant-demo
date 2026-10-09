@@ -1,0 +1,4 @@
+{
+  "pages": ["pages/home/index", "pages/list/index", "pages/detail/index"],
+  "window": { "navigationStyle": "custom", "backgroundColor": "#f7f9fc", "backgroundTextStyle": "light" }
+}

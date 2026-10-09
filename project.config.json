@@ -1,0 +1,6 @@
+{
+  "miniprogramRoot": "app/",
+  "projectname": "quzhou-local-merchant",
+  "description": "本地生活服务商户入驻平台",
+  "setting": { "es6": true, "minified": true }
+}

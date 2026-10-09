@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="hero-shell">
+    <view class="status-space"></view>
+    <view class="topline">
+      <view class="city"><text class="city-pin">♟</text><text>{{'衢州市'}}</text><text class="arrow">▾</text></view>
+      <view class="search"><text>⌕</text><input placeholder="搜索商户、服务、关键词" value="{{keyword}}" bindinput="onKeyword" confirm-type="search" bindconfirm="search"/><text class="search-go" bindtap="search">搜索</text></view>
+    </view>
+    <view class="banner">
+      <view class="banner-copy"><text class="banner-title">发现身边的\n优质服务商家</text><text class="banner-sub">品质服务 · 安心生活</text></view>
+      <view class="banner-scene"><text>⌂</text><text>♧</text></view>
+      <view class="dots"><text class="active"></text><text></text><text></text></view>
+    </view>
+  </view>
+  <view class="category-grid">
+    <view class="category" wx:for="{{categories}}" wx:key="id" data-name="{{item.name}}" bindtap="openCategory">
+      <view class="category-icon {{item.tone}}"><text>{{item.icon}}</text></view><text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="section-head"><view class="section-title"><text></text>推荐商户</view><view class="more" bindtap="openMore">查看更多 〉</view></view>
+  <view class="merchant-grid">
+    <view class="merchant-card" wx:for="{{merchants}}" wx:key="id" data-id="{{item.id}}" bindtap="openMerchant">
+      <image class="merchant-img" src="{{item.image}}" mode="aspectFill"/><view class="merchant-body"><text class="merchant-name">{{item.name}}</text><view><text class="tag primary">{{item.tags[0]}}</text><text class="tag">{{item.district}}</text></view><text class="score">★ {{item.score}} 好评</text></view>
+    </view>
+  </view>
+  <view class="bottom-space"></view><bottom-tab active="home" />
+</view>
